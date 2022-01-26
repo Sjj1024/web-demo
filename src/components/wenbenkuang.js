@@ -10,41 +10,29 @@ class Wenbenkuang extends React.Component {
     }
 
     handleBand = (e) => {
+        const target = e.target
+        console.log(target.checked)
+        const name = target.name
+        const value = target.type === "checkbox"
+            ? target.checked
+            : target.value
         this.setState({
-            text: e.target.value
-        })
-    }
-
-    handleContent = (e) => {
-        this.setState({
-            content: e.target.value
-        })
-    }
-
-    handleSelect = (e) => {
-        this.setState({
-            selValue: e.target.value
-        })
-    }
-
-    // 复选框的选中状态
-    handleCheckBox = (e) => {
-        this.setState({
-            isChecked: e.target.checked
+            [name]: value
         })
     }
 
     render() {
         return (
             <div>
-                <input type="text" value={this.state.text} onChange={this.handleBand}/>
-                <textarea value={this.state.content} onChange={this.handleContent}/>
-                <select value={this.state.selValue} onChange={this.handleSelect}>
+                {/*设施一个name属性，通过name属性修改状态*/}
+                <input type="text" name="text" value={this.state.text} onChange={this.handleBand}/>
+                <textarea name={"content"} value={this.state.content}  onChange={this.handleBand}/>
+                <select name={"selValue"} value={this.state.selValue} onChange={this.handleBand}>
                     <option value="sh">上海</option>
                     <option value="bj">北京</option>
                     <option value="sz">深圳</option>
                 </select>
-                <input type="checkbox" value={this.state.isChecked} onChange={this.handleCheckBox}/>
+                <input type="checkbox" name={"isChecked"} value={this.state.isChecked} onChange={this.handleBand}/>
             </div>
         )
     }

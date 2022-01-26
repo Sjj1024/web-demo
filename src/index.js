@@ -7,6 +7,7 @@ import Component from "./components/compon";
 import Zujian from "./components/jiantou";
 import JiShu from "./components/jishu";
 import Wenbenkuang from "./components/wenbenkuang";
+import Pinglun from "./components/pinglun";
 
 // 创建元素
 // const tit = React.createElement("h3", null, "Hello 脚手架")
@@ -31,20 +32,26 @@ const songs = [
 ]
 
 
+// const tit = (
+//     <div>
+//         <h1 className={"title"}>Hello World</h1>
+//         <span>我是{name}, 年龄:{age}</span>
+//         <span>{loadData()}</span>
+//         <ul>
+//             {/*{songs.map(item => <li id={item.id}>{item.name}</li>)}*/}
+//             {songs.map(item => <li key={item.id}>{item.name}</li>)}
+//         </ul>
+//         <Component/>
+//         <Zujian/>
+//         <HelloZuJian/>
+//         <JiShu/>
+//         <Wenbenkuang/>
+//     </div>
+// )
+
 const tit = (
     <div>
-        <h1 className={"title"}>Hello World</h1>
-        <span>我是{name}, 年龄:{age}</span>
-        <span>{loadData()}</span>
-        <ul>
-            {/*{songs.map(item => <li id={item.id}>{item.name}</li>)}*/}
-            {songs.map(item => <li key={item.id}>{item.name}</li>)}
-        </ul>
-        <Component/>
-        <Zujian/>
-        <HelloZuJian/>
-        <JiShu/>
-        <Wenbenkuang/>
+        <Pinglun/>
     </div>
 )
 

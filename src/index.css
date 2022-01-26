@@ -1,3 +1,25 @@
 .title{
   text-align: center;
 }
+
+
+.user{
+  width: -webkit-fill-available;
+  margin-bottom: 10px;
+}
+.content{
+  width: -webkit-fill-available;
+}
+
+.btn{
+  width: 100px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.app{
+  width: 500px;
+  border-style: solid;
+  border-color: #282c34;
+  padding: 10px;
+}
