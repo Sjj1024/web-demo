@@ -23,3 +23,16 @@
   border-color: #282c34;
   padding: 10px;
 }
+
+.fuzujian{
+  width: 500px;
+  height: 300px;
+  background-color: #61dafb;
+}
+
+.zizujian{
+  width: 200px;
+  height: 100px;
+  background-color: #282c34;
+  display: block;
+}

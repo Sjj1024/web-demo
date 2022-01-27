@@ -8,6 +8,10 @@ import Zujian from "./components/jiantou";
 import JiShu from "./components/jishu";
 import Wenbenkuang from "./components/wenbenkuang";
 import Pinglun from "./components/pinglun";
+import Chuanzhi from "./components/chuanzhi";
+import Xingdi from "./components/xingdi";
+import Kuazujian from "./components/kuazujian";
+import Jiaoyan from "./components/jiaoyan";
 
 // 创建元素
 // const tit = React.createElement("h3", null, "Hello 脚手架")
@@ -49,9 +53,31 @@ const songs = [
 //     </div>
 // )
 
+// const tit = (
+//     <div>
+//         <Chuanzhi name="传递的name" age={20} colors={["red", "blue", "yellow"]} fn={()=>{console.log("传递的函数")}}/>
+//     </div>
+// )
+
+// 兄弟组件间传值
+// const tit = (
+//     <div>
+//         <Kuazujian>
+//             {/*子标签也可以是组件*/}
+//             <JiShu/>
+//         </Kuazujian>
+//     </div>
+// )
+
+function print() {
+    console.log("这是功能函数")
+}
+
+// 校验值类型
 const tit = (
     <div>
-        <Pinglun/>
+        <Jiaoyan zifuchuan={"字符串"} shuzi={9} function={print}
+                 shuzu={["red", "blue"]} duixiang={{name:"song", age:19}}/>
     </div>
 )
 
